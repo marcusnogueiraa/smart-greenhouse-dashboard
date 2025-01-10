@@ -1,17 +1,19 @@
-<%- include('../partials/head') %>
+<%- include('../partials/shared/head') %>
 <body class="bg-light">
-    <%- include('../partials/sideBar') %>
+    <%- include('../partials/shared/sideBar') %>
     <div id="content">
         <h1 class="mt-3">Monitoring Panel</h1>
         <p>Monitor greenhouse actions and sensor data in real time.</p>
         <div class="container mt-5">
             <h4 class="mt-4">Sensor Data</h4>
-            <%- include('../partials/sensorDataList') %>
-            <h4 class="mt-4">Irrigation Log</h4>
-            <%- include('../partials/irrigationLog') %>
+            <%- include('../partials/monitoring/sensorDataList') %>
+            <h4 class="mt-4">Logs</h4>
+            <%- include('../partials/monitoring/messageLogs') %>
+            <h4 class="mt-4">Status</h4>
+            <%- include('../partials/monitoring/status') %>
         </div>
     </div>
-    <script src="/js/polling.js"></script>
+    <script src="/js/sensorDataPolling.js"></script>
     <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
