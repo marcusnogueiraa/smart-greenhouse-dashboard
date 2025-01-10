@@ -8,8 +8,13 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "../views")); 
 app.use(express.static(path.join(__dirname, "../public")));
 
+
 app.get("/", (req, res) => {
-    res.render("pages/monitoring", { title: "Dashboard" });
+    res.render("", { title: "Dashboard" });
+});
+
+app.get("/monitoring", (req, res) => {
+    res.render("pages/monitoring", { title: "Dashboard - Monitoring" });
 });
 
 app.listen(PORT, () => {
