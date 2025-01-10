@@ -40,8 +40,11 @@
 }
 
 .scrollable-div {
-    max-height: 200px;
+    max-height: 300px;
     overflow-y: auto; 
     border: 1px solid #ddd;
     padding: 10px;
+
+    scrollbar-width: thin;
+    scrollbar-color: #1A4D2E #f1f1f1;
 }
