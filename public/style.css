@@ -38,3 +38,10 @@
     display: flex;
     gap: 2rem;
 }
+
+.scrollable-div {
+    max-height: 200px;
+    overflow-y: auto; 
+    border: 1px solid #ddd;
+    padding: 10px;
+}
